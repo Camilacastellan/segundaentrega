@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,300&family=Roboto:ital,wght@0,100;1,300&display=swap');
+
+h1, h2, h3, p {
+    font-family:'Roboto', sans-serif;
+}
+
+.row{ 
+    padding-bottom: 20%;
+}
+body{
+    margin: 0%;
+    box-shadow: inset;
+}
+
+
+a { /*AGREGE TEXT DECORATION PARA SACAR SUBRAYADO A LOS LINK Y COLOR NEGRO*/
+    text-decoration:none;
+    color: black;
+}
+
+.logo-index {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-index a {
+    margin: 0%;
+}
+
+.logo-index img {
+    width: 5rem;
+}
+
+/*----barra de navegacion*/
+
+.barranav{
+    width: 100%;
+}
+
+.barranav ul{ /* SAQUE FLEX, LIMPIE LOS MARGIN Y PADDING INNECESARIOS*/
+    text-align: center;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    padding-inline-start: 0%;
+    
+}
+
+.barranav ul li{ /*AGREGE INLINE-BLOCK, ALIGN ITEMS Y JUSTIFY CONTENT*/
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 7px;
+    border-right: 2px solid green;
+    font-size: large;
+
+}
+
+.barranav ul a{
+    margin: 0%;
+    padding: 0%;
+}
+
+/*BANNER-INICIO*/
+
+.banner-inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-inicio img {
+    width: 100%;
+    height: 10%;
+    display: block;
+    
+}
+
+/*ACOMODO TITULO Y SUBTITULO PARA QUE QUEDE EN ORDEN DE ARRIBA HACIA ABAJO*/
+h1 {
+    color: rgb(13, 164, 113);
+    font-weight:lighter;
+    text-align: center;
+    padding-top: 0.5rem;
+    margin-block-end: 0%;
+    margin-block-start: 0%;
+    font-weight: bold;
+    padding-top: 40px;
+    /*SAQUE MARGIN Y AUTO*/
+    /*AGREGE PADDING-TOP PARA UN ESPACIO ENTRE EL BANNER Y TITULO*/
+    /*SAQUE BACKGROUND POSITION*/
+    /*AGREGUE FONT WEIGHT:BOLD*/
+
+}
+
+
+.titulo-principal h1, h2{
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+/* main*/
+.grid-somos{
+    display: grid;
+    background-color: #fcfaf9;
+    grid-template-columns: auto auto;
+   
+}
+
+.somos{
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgb(244, 237, 237);
+
+    transition: all .3s ease-in-out;
+}
+
+
+.somos:hover{
+    width: 100%;
+    background-color: #dd8fc0;
+}
+
+.etis-animacion{
+    animation-name: movimiento-uno;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+
+@keyframes movimiento-uno{
+    0%{
+        width: 600px;
+        color: greenyellow;
+    }
+
+    25%{
+        width: 450px;
+        color: rgb(39, 215, 15);
+    }
+
+    75%{
+        width: 300px;
+        color: rgb(16, 150, 16);
+    }
+
+    100%{
+        width: 600px;
+        color: rgb(44, 244, 9);
+    }
+}
+
+
+.video{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+ /* footer */
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul li {
+    display: inline-block;
+    justify-content: center;
+    padding-top: 2rem;  
+}
+.redes{
+    display: flex;
+    margin: 0%;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+}
+
+.redes ul li{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+
+.redes ul li img{
+    height: 30px;
+    width: 30px;
+    margin: 0%;
+}
+
+/*imagenes curso*/
+
+.main{
+    display: flex;  /*CAMBIO DISPLAY GRID A DISPLAY FLEX*/
+                    /*SACO TODAS LAS COLUMNAS Y ROWS DE GRID*/
+    width: 100%;    /*PUSE EL WIDTH EN 100%*/
+}
+
+.contenedor-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+    width: 90%;
+    margin-left: 5%;
+    /*AGREGUE DISPLAY FLEX, FLEX DIRECTION COLUMN, JUSTIFY CONTENT CENTER, TEXT ALIGN Y ITEMS CENTER, WIDTH 90% Y PADDING LEFT 5%*/
+}
+
+.foto {
+    padding-bottom: 2rem;
+    width: 80vw;
+      /*AGREGUE PADDING TOP A LOS DIV PARA EL ESPACIADO ENTRE C/U
+      Y AGREGUE WIDTH 80VW (80% DE VISTA DE LA VENTANA*/
+}
+
+.foto h2 {
+    font-size: 30px;
+}
+
+.foto img,
+.foto-aka img {
+    border-radius: 1rem;
+    border: solid silver;
+    box-shadow: 0 0 10px black;
+}
+
+.contenedor a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Imagenes taller*/
+
+.contenedor-talleres-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+    width: 90%;
+    margin-left: 5%;
+ }
+
+.foto-taller{
+    padding-bottom: 2rem;
+    width: 80vw; }
+
+header a{
+    margin: 20px;
+    font-size: 15px;
+}
+
+
+.ingresa{
+    background-color: rgb(13, 164, 113);
+    font-style: italic;
+    font-size: 20px;
+}
+
+.registra{
+    page-break-inside: auto;
+    font-weight: 40px;
+    padding: 3px;
+    font-style: oblique;
+}
+
+ 
+
+@media screen and (min-width:700px) {
+
+    /*BARRA DE NAVEGACION*/
+    .contenedor-barranav {
+        width: 100%;
+        position: fixed;
+        top: 0%;
+    }
+
+    .banner-inicio {
+        padding-top: 0%;
+        height: 1%;
+    }
+    
+    .contenedor-barranav .logo-index {
+        display: block;
+        position: absolute;
+        top: 0%;
+        padding-left: 5px;
+        height: 100px;
+    }
+
+    .logo-index img {
+        width: 3rem;
+        padding-top: 3px;
+    }
+
+    .barranav ul {
+        text-align: end;
+        background-color: whitesmoke;
+        padding-bottom: 5px;
+        padding-right: 10px;
+    }
+
+    .barranav ul li:hover {
+        background-color: #DDC8C4;
+    }
+
+    .barranav ul li {
+        border: solid black;
+        border-radius: 12px;
+        font-size: 20px;
+        margin-right: 10px;
+
+    }
+    
+
+    .main {
+        display: grid;
+    }
+
+    .contenedor-main {
+        padding-top: 3rem;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /*COLUMNAS*/
+        grid-template-rows: repeat(2, 1fr);    /*FILAS*/
+        gap: 15px;
+        
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+    .foto img {
+        width: 90%;
+    }
+
+
+    .contenedor-talleres-flex{
+        padding-top: 3rem;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /*COLUMNAS*/
+        grid-template-rows: repeat(1, 1fr);    /*FILAS*/
+        gap: 15px;
+        
+    }
+}
+
+.estructura-paginas {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 10%;
+}
+    
+
+@media screen and (min-width:1024px) {
+
+    h1{
+        margin: 5px;
+        padding: 30px;
+        font-size: 50px;
+    }
+
+    nav a{
+        color: black;
+        font-size: 30px;
+    }
+
+    .somos{
+        font-style: italic;
+        font-weight:bolder;
+        text-align:center;
+        font-size: 30px;
+        margin: 20px;
+        padding:10px;
+        box-sizing: border-box;
+    }
+
+    .video{
+        width: 100%
+    }
+    }
+
+    .ingresa{
+        font-size: 30px; 
+        text-align:left; 
+    }
+
+    .registra{
+        page-break-inside: auto;
+        font-weight: 0px;
+        padding: 5px;
+        font-style: oblique;
+    }
+
+    .contenedor{
+        display: grid;
+        grid-row-gap: 30px;
+        width: 0%;
+        margin: 0%;
+        padding-left: 4rem;
+    }
+
+    div img{
+        display: grid;
+        width: 100%;
+        margin: 50; 
+    }
+
+    header a{
+        margin: 20px;
+        font-size: 40px;
+    }
+
+    .foto a{
+        font-size: 30px;
+    }
+
+    .paginas{
+        font-size: 30px;
+    }
+
+    .contredes{
+        display: flex;
+        padding: 25px;
+        flex-direction:row;
+        font-size: 25px;
+    }
+    
+    .redes{
+        width: 70px;
+        height: 50px;
+        margin: 30px;
+        font-style: oblique;
+    }
+
+    .estructura-paginas h1{
+       padding-top: 55px;
+       text-decoration: underline;
+
+    }
+   
+    .contenedor-talleres{
+        padding-top: 3rem;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /*COLUMNAS*/
+        grid-template-rows: repeat(1, 1fr);    /*FILAS*/
+        gap: 30px;
+        margin-block-start: 40px;
+        
+     }
+
+    .foto-taller{
+        width: 80%;
+    }
+    
