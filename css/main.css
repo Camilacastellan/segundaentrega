@@ -4,6 +4,47 @@ h1, h2, h3, p {
     font-family:'Roboto', sans-serif;
 }
 
+.estructura-paginas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 30px;
+    padding: 10px;
+    }
+
+/*letra de card*/
+.container{
+    text-align: center;
+    width: 100%;
+    
+}
+
+/*imagen de card*/
+.card{
+    width: 100%;
+    margin-right: 20%;
+    margin-left: 20%;
+    filter: drop-shadow(5px 5px 5px silver);
+}
+
+.card:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+/*letra de navegacion header*/
+.nav-link{
+    margin: 4px;
+    font-size: 20px;
+}
+
+.col{
+    width: 100%;
+    text-align: center;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+
 .row{ 
     padding-bottom: 20%;
 }
@@ -52,7 +93,7 @@ a {
     justify-content: space-around;
     padding-left: 10px;
     padding-right: 7px;
-    border-right: 2px solid green;
+    border-right: 2px solid rgb(17, 101, 48);
     font-size: large;
 
 }
@@ -75,16 +116,18 @@ a {
     width: 100%;
     height: 10%;
     display: block;
+    padding-bottom: 40px;
     
 }
 
 
 /*titulos generales*/
 h1 {
-    color: rgb(13, 164, 113);
+    color: rgb(17, 101, 48);
     font-weight:lighter;
     text-align: center;
     padding-top: 0.5rem;
+    padding-bottom: 3rem;
     margin-block-end: 0%;
     margin-block-start: 0%;
     font-weight: bold;
@@ -97,11 +140,17 @@ h1 {
 }
 
 /*TITULO INDEX*/
+
+.titulo-principal{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .titulo-principal h1, h2{
     padding: 1%;
     margin: 1%;
     text-align: center;
     font-size: xx-large;
+    font-style: italic;
 }
 
 
@@ -109,70 +158,43 @@ h1 {
 .grid-somos{
     display: grid;
     background-color: #fcfaf9;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
    
 }
 
 .somos{
     background-color: white;
     text-align: center;
-    border: 1px solid rgb(244, 237, 237);
-
+    width: 100%;
+    padding-bottom: 20px;
+    
     transition: all .3s ease-in-out;
 }
 
 .somos p{
-    font-size: 20px;
+    margin: 10px;
+    font-size: 15px;
 }
 
 
 .somos:hover{
     width: 100%;
-    background-color: #dd8fc0;
+    background-color: rgb(255, 204, 29);
 }
 
-.video{
+.video-index{
     text-align: center;
     width: 100%;
-    padding-bottom: 2rem;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    
 }
-
-/*animacion de titulo etis*/
-.etis-animacion{
-    animation-name: movimiento-uno;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-duration: 5s;
-}
-
-@keyframes movimiento-uno{
-    0%{
-        width: 600px;
-        color: greenyellow;
-    }
-
-    25%{
-        width: 450px;
-        color: rgb(39, 215, 15);
-    }
-
-    75%{
-        width: 300px;
-        color: rgb(16, 150, 16);
-    }
-
-    100%{
-        width: 600px;
-        color: rgb(44, 244, 9);
-    }
-}
-
 
  /* footer */
 footer{
     width: 100%;
     height: 100px;
-    background-color: beige;
+    background-color: rgb(232, 232, 204);
 }
 
 footer ul {
@@ -271,7 +293,7 @@ header a{
     font-size: 15px;
 }
 
-
+/*pagina contacto*/
 .ingresa{
     background-color: rgb(13, 164, 113);
     font-style: italic;
@@ -284,6 +306,18 @@ header a{
     padding: 3px;
     font-style: oblique;
 }
+
+form{
+    padding-bottom: 80px;
+    margin: 30px;
+}
+
+.form-label{
+
+
+}
+
+
 
  
 
@@ -348,6 +382,15 @@ header a{
         
     }
 
+    /*main texto*/
+    .grid-somos{
+        display: grid;
+        background-color: #fcfaf9;
+        grid-template-columns: auto auto;
+       
+    }
+    
+
     .foto {
         width: 100%;
     }
@@ -368,12 +411,12 @@ header a{
     }
 }
 
-.estructura-paginas {
+    .estructura-paginas {
     display: flex;
     flex-direction: column;
     width: 80%;
     padding-left: 10%;
-}
+    }
     
 
 @media screen and (min-width:1024px) {
